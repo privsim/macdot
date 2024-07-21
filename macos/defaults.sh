@@ -1,7 +1,7 @@
-COMPUTER_NAME="Neo"
-LANGUAGES=(en nl)
+COMPUTER_NAME="m3"
+LANGUAGES=en
 LOCALE="en_US@currency=EUR"
-MEASUREMENT_UNITS="Centimeters"
+MEASUREMENT_UNITS="Inches"
 SCREENSHOTS_FOLDER="${HOME}/Screenshots"
 
 # Topics

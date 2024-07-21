@@ -9,11 +9,12 @@ local function toggleApplication(name)
   end
 end
 
-hs.hotkey.bind(mash, "c", function() toggleApplication("Google Chrome") end)
-hs.hotkey.bind(mash, "e", function() toggleApplication("Visual Studio Code") end)
-hs.hotkey.bind(mash, "f", function() toggleApplication("Finder") end)
-hs.hotkey.bind(mash, "g", function() toggleApplication("SourceTree") end)
-hs.hotkey.bind(mash, "m", function() toggleApplication("Mail") end)
-hs.hotkey.bind(mash, "p", function() toggleApplication("System Preferences") end)
-hs.hotkey.bind(mash, "s", function() toggleApplication("Spotify") end)
-hs.hotkey.bind(mash, "t", function() toggleApplication("Terminal") end)
+-- Application hotkeys
+hs.hotkey.bind(launchMash, "c", function() toggleApplication("Chromium") end)
+hs.hotkey.bind(launchMash, "e", function() toggleApplication("Visual Studio Code") end)
+hs.hotkey.bind(launchMash, "f", function() toggleApplication("Finder") end)
+hs.hotkey.bind(launchMash, "g", function() toggleApplication("SourceTree") end)
+hs.hotkey.bind(launchMash, "p", function() toggleApplication("System Preferences") end)
+hs.hotkey.bind(launchMash, "s", function() toggleApplication("Spotify") end)
+hs.hotkey.bind(launchMash, "t", function() toggleApplication("iTerm") end)
+hs.hotkey.bind(launchMash, "k", function() toggleApplication("Cursor") end)
