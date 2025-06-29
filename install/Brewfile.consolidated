@@ -1,0 +1,97 @@
+# Consolidated Brewfile - Removes duplicates and adds only essential new tools
+
+tap "homebrew/bundle"
+tap "lotyp/homebrew-formulae"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+
+# === EXISTING PACKAGES (Keep as-is) ===
+# core/dotfiles
+brew "bats-core"
+brew "coreutils"
+brew "duti"
+brew "lotyp/formulae/dockutil"
+brew "nano"
+brew "stow"
+brew "thefuck"
+brew "topgrade"     # Great choice for unified updates!
+
+# fs/network (existing)
+brew "bat"
+brew "croc"
+brew "httpie"
+brew "ssh-copy-id"
+brew "tree"
+brew "unar"
+brew "wget"
+brew "zoxide"
+
+# search/grep/diff (existing)
+brew "fd"
+brew "fzf"
+brew "git-delta"
+brew "gnu-sed"
+brew "grep"
+brew "jq"
+brew "psgrep"
+brew "ripgrep"
+brew "the_silver_searcher"
+
+# languages/tools (existing)
+brew "gh"
+brew "n"
+brew "python"
+brew "ruby"
+brew "rust"
+brew "shellcheck"
+
+# media (existing)
+brew "ffmpeg"
+brew "imagemagick"
+brew "uni"
+brew "webp"
+brew "grip"
+
+# === NEW ESSENTIAL ADDITIONS ===
+# Version management (better than individual managers)
+brew "asdf"
+
+# Security essentials
+brew "gnupg"
+brew "pinentry-mac"
+brew "age"           # Modern encryption
+
+# Developer productivity (only the best ones)
+brew "direnv"        # Per-project env vars
+brew "lazygit"       # Excellent git TUI
+brew "mkcert"        # Local HTTPS certs
+
+# Modern CLI replacements (only the most useful)
+brew "eza"           # Better ls (aliased as ls)
+brew "procs"         # Better ps
+brew "bottom"        # Better top/htop
+brew "duf"           # Better df
+
+# System tools
+brew "mas"           # Mac App Store CLI
+
+# === CASKS (Keep existing) ===
+cask "docker"
+cask "proton-drive"
+cask "firefox"
+cask "font-fira-code"
+cask "font-hack"
+cask "google-chrome"
+cask "google-chrome@canary"
+cask "hammerspoon"
+cask "maccy"
+cask "raycast"
+cask "slack"
+cask "sourcetree"
+cask "spotify"
+cask "visual-studio-code"
+cask "vlc"
+
+# === NEW CASK ADDITIONS ===
+cask "warp"          # Modern terminal
+cask "orbstack"      # Better Docker Desktop alternative

@@ -1,13 +1,13 @@
 [user]
-	name = Lars Kappert
-	email = lars@webpro.nl
+	name = privsim
+	email = excaliberswake@pm.me
 
 [github]
-	user = webpro
+	user = privsim
 
 [core]
-	excludesfile = ~/.config/git/ignore
-	editor = code --wait
+	excludesfile = /Users/lclose/.config/git/ignore
+	editor = vim
 	filemode = false
 	trustctime = false
 	autocrlf = input
@@ -31,7 +31,7 @@
 	defaultBranch = main
 
 [push]
-	default = simple
+	default = current
 	followTags = true
 
 [fetch]
@@ -75,8 +75,8 @@
 	prompt = false
 
 [difftool "sourcetree"]
-	cmd = code --wait --diff $LOCAL $REMOTE
-	path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 
 [merge]
 	conflictstyle = diff3
@@ -86,7 +86,7 @@
 	prompt = false
 
 [mergetool "sourcetree"]
-	cmd = code --wait $MERGED
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 
 [delta]
@@ -95,3 +95,19 @@
 
 [color]
 	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[cola]
+	fontdiff = Inconsolata LGC Nerd Font,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+	icontheme = dark
+#[safe]
+#	directory = /Users/Shared/workspace/gradio
+#[credential "https://github.com"]
+#	helper = 
+#	helper = !/opt/homebrew/bin/gh auth git-credential
+#[credential "https://gist.github.com"]
+#	helper = 
+#	helper = !/opt/homebrew/bin/gh auth git-credential
